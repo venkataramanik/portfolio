@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Venkat Krishnan — AI/ML for Supply Chain</title>
+  <meta name="description" content="Venkat Krishnan — AI/ML supply chain demos and practical write-ups.">
+  <meta property="og:title" content="Venkat Krishnan — AI/ML for Supply Chain">
+  <meta property="og:description" content="Practical, open-source demos for ETA prediction, inventory policy (ROP/EOQ), routing, and supplier risk.">
+  <meta property="og:url" content="https://www.venkat-scm.com/">
+  <style>
+    :root{--bg:#0b1220;--card:#121a2b;--ink:#e9eefb;--muted:#b6c0d9;--brand:#5aa9ff}
+    *{box-sizing:border-box} body{margin:0;background:var(--bg);color:var(--ink);
+      font:16px/1.6 ui-sans-serif,system-ui,Segoe UI,Roboto,Helvetica,Arial}
+    .wrap{max-width:900px;margin:0 auto;padding:32px 18px}
+    a{color:var(--brand);text-decoration:none} a:hover{text-decoration:underline}
+    h1{font-size:30px;line-height:1.2;margin:0 0 8px}
+    .muted{color:var(--muted)}
+    .panel{background:var(--card);border:1px solid #223354;border-radius:14px;padding:18px;margin:16px 0}
+    .btn{display:inline-block;padding:10px 14px;border-radius:10px;border:1px solid #325189;background:#132038;color:#d7e6ff}
+    .btn:hover{background:#162747}
+    ul{margin:8px 0 0;padding-left:18px}
+    footer{margin-top:24px;color:var(--muted);font-size:14px}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>Venkat Krishnan</h1>
+      <p class="muted">AI/ML for real supply-chain outcomes — concise demos, not a resume dump.</p>
+    </header>
+
+    <section class="panel">
+      <h2>Summary</h2>
+      <p>
+        I build small, practical apps that turn supply-chain questions into data-driven answers:
+        late-risk & ETA prediction, inventory policy (Safety Stock / ROP / EOQ), routing, and supplier risk.
+        Everything here is open-source, fast to try, and focused on business impact.
+      </p>
+    </section>
+
+    <section class="panel">
+      <h2>Why this site?</h2>
+      <ul>
+        <li><strong>Show, don’t tell:</strong> live demos you can click, not slides.</li>
+        <li><strong>Open stack:</strong> Python, scikit-learn, Streamlit, Plotly—no paid APIs.</li>
+        <li><strong>Decision-ready:</strong> each demo states the problem, method, and what to do next.</li>
+      </ul>
+    </section>
+
+    <section class="panel" id="featured">
+      <h2>Featured demo — ETA &amp; Reorder Advisor</h2>
+      <p>
+        <strong>Problem:</strong> Stockouts and expediting because supplier delays aren’t predicted and ROPs are static.<br>
+        <strong>Solution:</strong> Learn from shipment history to predict late-risk & ETA; compute Safety Stock & ROP/EOQ for chosen service levels.<br>
+        <strong>Tools:</strong> Python · Streamlit · scikit-learn · pandas · numpy · plotly.
+      </p>
+      <p><a class="btn" href="https:/
