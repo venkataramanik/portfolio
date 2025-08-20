@@ -3,18 +3,15 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Venkat Krishnan — AI/ML for Supply Chain</title>
-  <meta name="description" content="Venkat Krishnan — AI/ML supply chain demos and practical write-ups.">
-  <meta property="og:title" content="Venkat Krishnan — AI/ML for Supply Chain">
-  <meta property="og:description" content="Practical, open-source demos for ETA prediction, inventory policy (ROP/EOQ), routing, and supplier risk.">
-  <meta property="og:url" content="https://www.venkat-scm.com/">
+  <title>Venkat Krishnan — AI/ML Supply Chain Playground</title>
+  <meta name="description" content="A playground for AI/ML solutions in Supply Chain Management. Small, practical demos that turn SCM questions into data-driven answers." />
   <style>
     :root{--bg:#0b1220;--card:#121a2b;--ink:#e9eefb;--muted:#b6c0d9;--brand:#5aa9ff}
     *{box-sizing:border-box} body{margin:0;background:var(--bg);color:var(--ink);
       font:16px/1.6 ui-sans-serif,system-ui,Segoe UI,Roboto,Helvetica,Arial}
     .wrap{max-width:900px;margin:0 auto;padding:32px 18px}
     a{color:var(--brand);text-decoration:none} a:hover{text-decoration:underline}
-    h1{font-size:30px;line-height:1.2;margin:0 0 8px}
+    h1{font-size:30px;line-height:1.2;margin:0 0 6px}
     .muted{color:var(--muted)}
     .panel{background:var(--card);border:1px solid #223354;border-radius:14px;padding:18px;margin:16px 0}
     .btn{display:inline-block;padding:10px 14px;border-radius:10px;border:1px solid #325189;background:#132038;color:#d7e6ff}
@@ -27,32 +24,45 @@
   <div class="wrap">
     <header>
       <h1>Venkat Krishnan</h1>
-      <p class="muted">AI/ML for real supply-chain outcomes — concise demos, not a resume dump.</p>
+      <p class="muted">A playground for AI/ML solutions in Supply Chain Management</p>
     </header>
 
     <section class="panel">
-      <h2>Summary</h2>
+      <h2>What this site is</h2>
       <p>
-        I build small, practical apps that turn supply-chain questions into data-driven answers:
-        late-risk & ETA prediction, inventory policy (Safety Stock / ROP / EOQ), routing, and supplier risk.
-        Everything here is open-source, fast to try, and focused on business impact.
+        I'm curious how AI and Machine Learning can solve real-world SCM problems and deliver business value.
+        This is a quick playground to explore those ideas—small, practical demos that turn questions into
+        data-driven answers.
       </p>
-    </section>
-
-    <section class="panel">
-      <h2>Why this site?</h2>
       <ul>
-        <li><strong>Show, don’t tell:</strong> live demos you can click, not slides.</li>
-        <li><strong>Open stack:</strong> Python, scikit-learn, Streamlit, Plotly—no paid APIs.</li>
-        <li><strong>Decision-ready:</strong> each demo states the problem, method, and what to do next.</li>
+        <li>Late-risk &amp; ETA prediction</li>
+        <li>Inventory policy: Safety Stock / ROP / EOQ</li>
+        <li>Routing &amp; logistics optimization</li>
+        <li>Supplier risk</li>
       </ul>
+      <p class="muted">Everything here is open-source, fast to try, and focused on business impact.</p>
     </section>
 
     <section class="panel" id="featured">
       <h2>Featured demo — ETA &amp; Reorder Advisor</h2>
       <p>
         <strong>Problem:</strong> Stockouts and expediting because supplier delays aren’t predicted and ROPs are static.<br>
-        <strong>Solution:</strong> Learn from shipment history to predict late-risk & ETA; compute Safety Stock & ROP/EOQ for chosen service levels.<br>
+        <strong>Solution:</strong> Learn from shipment history to predict late-risk &amp; ETA; compute Safety Stock &amp; ROP/EOQ for chosen service levels.<br>
         <strong>Tools:</strong> Python · Streamlit · scikit-learn · pandas · numpy · plotly.
       </p>
-      <p><a class="btn" href="https:/
+      <p><a class="btn" href="https://app.venkat-scm.com" target="_blank" rel="noopener">Launch the app →</a></p>
+    </section>
+
+    <section class="panel">
+      <h2>Connect with me</h2>
+      <p>
+        LinkedIn: <a href="https://www.linkedin.com/in/venkrish1" target="_blank" rel="noopener">Venkat Krishnan</a><br>
+        Email: <a href="mailto:contact@venkat-scm.com">contact@venkat-scm.com</a>
+      </p>
+    </section>
+
+    <footer>© <span id="y"></span> Venkat Krishnan · venkat-scm.com</footer>
+  </div>
+  <script>document.getElementById('y').textContent = new Date().getFullYear()</script>
+</body>
+</html>
